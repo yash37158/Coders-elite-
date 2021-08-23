@@ -9,6 +9,15 @@
   }
 }
 
+.alert{
+  text-align:center;
+  padding: 10px;
+  background: #79c879; 
+  color:white;
+   margin: bottom 10px;
+  display: none;
+}
+
 .contact-clean form {
   max-width: 480px;
   width: 90%;

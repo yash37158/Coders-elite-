@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="assets/css/Shop-item.css">
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/Testimonials.css">
+    
 </head>
 
 <body>
@@ -116,12 +117,14 @@
         </div>
     </section>
     <section class="contact-clean" style="background: rgba(228,213,206,0.29);margin-top: 80px;">
-        <form method="post">
+        <form id="contactForm">
             <h2 class="text-center">Contact us</h2>
-            <div class="mb-3"><input class="form-control" type="text" name="name" placeholder="Name"></div>
-            <div class="mb-3"><input class="form-control is-invalid" type="email" name="email" placeholder="Email"><small class="form-text text-danger">Please enter a correct email address.</small></div>
-            <div class="mb-3"><textarea class="form-control" name="message" placeholder="Message" rows="14"></textarea></div>
-            <div class="mb-3"><button class="btn btn-primary" type="submit">send </button></div>
+            <div class="alert">Your message has been send sucessfully!</div>
+            <hr class="star-dark mb-5">
+            <div class="mb-3"><input class="form-control" type="text" name="name" id="name" placeholder="Name"></div>
+            <div class="mb-3"><input class="form-control is-invalid" type="email" id="email" name="email" placeholder="Email"><small class="form-text text-danger">Please enter a correct email address.</small></div>
+            <div class="mb-3"><textarea class="form-control" name="message" placeholder="Message" id="message" rows="14"></textarea></div>
+            <div class="mb-3"><button class="btn btn-primary" type="submit" id="submit">send</button></div>
         </form>
     </section>
     <footer class="footer-basic" style="margin-top: 5%;">
@@ -136,6 +139,11 @@
         <p class="copyright">Company Name © 2021</p>
     </footer>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <!--Firebase for sdk firebase-app.js  -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+    <script src="js/contact.js"></script>
 </body>
 
 </html>
